@@ -1,0 +1,82 @@
+[
+ {
+  "handle": "upstash",
+  "name": "upstash",
+  "where": "https://github.com/upstash/context7",
+  "source": "github",
+  "segment": "per-call-api",
+  "why_now": "Context7 Platform -- Up-to-date docs for AI agents"
+ },
+ {
+  "handle": "ChromeDevTools",
+  "name": "ChromeDevTools",
+  "where": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "source": "github",
+  "segment": "per-call-api",
+  "why_now": "Chrome DevTools for coding agents"
+ },
+ {
+  "handle": "github",
+  "name": "github",
+  "where": "https://github.com/github/github-mcp-server",
+  "source": "github",
+  "segment": "per-call-api",
+  "why_now": "GitHub's official MCP Server"
+ },
+ {
+  "handle": "apify",
+  "name": "apify",
+  "where": "https://github.com/apify/apify-mcp-server",
+  "source": "github",
+  "segment": "per-call-api",
+  "why_now": "The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, or any other website using thou"
+ },
+ {
+  "handle": "DeusData",
+  "name": "DeusData",
+  "where": "https://github.com/DeusData/codebase-memory-mcp",
+  "source": "github",
+  "segment": "mcp-server",
+  "why_now": "Local code intelligence for developers and AI agents. Connect code, docs and infrastructure in a persistent graph, with CBM Lens, MCP tools, agent int"
+ },
+ {
+  "handle": "oraios",
+  "name": "oraios",
+  "where": "https://github.com/oraios/serena",
+  "source": "github",
+  "segment": "mcp-server",
+  "why_now": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent"
+ },
+ {
+  "handle": "czlonkowski",
+  "name": "czlonkowski",
+  "where": "https://github.com/czlonkowski/n8n-mcp",
+  "source": "github",
+  "segment": "mcp-server",
+  "why_now": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you "
+ },
+ {
+  "handle": "mrexodia",
+  "name": "mrexodia",
+  "where": "https://github.com/mrexodia/ida-pro-mcp",
+  "source": "github",
+  "segment": "mcp-server",
+  "why_now": "AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP."
+ },
+ {
+  "handle": "xerj-org",
+  "name": "xerj-org",
+  "where": "https://github.com/xerj-org/xerj",
+  "source": "github",
+  "segment": "mcp-server",
+  "why_now": "Local-first search engine and MCP server for AI agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hy"
+ },
+ {
+  "handle": "activepieces",
+  "name": "activepieces",
+  "where": "https://github.com/activepieces/activepieces",
+  "source": "github",
+  "segment": "mcp-server",
+  "why_now": "AI Agents & MCPs & AI Workflow Automation \u2022 (~400 MCP servers for AI agents) \u2022 AI Automation / AI Agent with MCPs \u2022 AI Workflows & AI Agents \u2022 MCPs fo"
+ }
+]
