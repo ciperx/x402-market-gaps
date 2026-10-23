@@ -1,0 +1,74 @@
+SOURCES AND RECIPE
+==================
+
+Source clip
+-----------
+Title: A Surprise for Jean (1954)
+Producer: Encyclopaedia Britannica Films
+Archive: Internet Archive, Prelinger Archives collection
+Item page: https://archive.org/details/SurpriseForJ
+Direct file used: https://archive.org/download/SurpriseForJ/SurpriseForJ.mp4
+File: 640x480 h.264, 29.97 fps, AAC audio, 397.36 s
+Licence: Public Domain. The item metadata carries
+  licenseurl = http://creativecommons.org/licenses/publicdomain/
+Access date: 2026-10-23
+Nothing else was used. No stock footage, no music, no fonts, no logos.
+
+Clip used
+---------
+before.mp4 is the source from 00:02:37.000 to 00:02:53.000 (16.0 s), one
+continuous shot: a mother holding a small child and a boy in the yard of a
+white clapboard house, with a picket fence, lawn and shrubs. Re-encoded once
+from the archive derivative at CRF 16 so the delivery file is clean and small.
+Audio kept as the original location sound.
+
+Grade
+-----
+after.mp4 is before.mp4 with look.cube applied by ffmpeg lut3d, nothing else.
+look.cube is a 33x33x33 3D LUT (35937 entries, 0..1 domain) built by gen_lut.py
+from this transform, in order:
+
+  1. Black lift: x = 0.032 + 0.968 x. Raises the floor so no shadow goes to 0.
+  2. Gentle S-curve: x = 0.80 x + 0.20 smoothstep(x). Soft contrast, endpoints kept.
+  3. Warm balance: R x 1.055, G x 1.005, B x 0.935, with +0.006 R and -0.002 B
+     weighted by (1 - x), so shadows warm gently instead of turning blue.
+  4. Hue selective saturation in HSV: +12 percent for greens near 120 deg,
+     +10 percent for skies near 215 deg, gaussian weighted, skin hues untouched.
+  5. Highlight shoulder: above 0.86 a tanh rolloff maps 1.0 to about 0.967,
+     so whites keep headroom and nothing clips.
+  6. Golden highlight tint: +0.010 R, +0.003 G, -0.008 B weighted by mean(x)^2.
+
+Reproduction commands
+---------------------
+  ffmpeg -ss 157.0 -t 16.0 -i SurpriseForJ.mp4 -map 0:v:0 -map 0:a:0 \
+    -c:v libx264 -preset slow -crf 16 -pix_fmt yuv420p \
+    -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
+    -c:a aac -b:a 128k -movflags +faststart before.mp4
+
+  ffmpeg -i before.mp4 -vf lut3d=look.cube \
+    -c:v libx264 -preset slow -crf 16 -pix_fmt yuv420p \
+    -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
+    -c:a copy -movflags +faststart after.mp4
+
+Verification
+------------
+The LUT was applied to before.mp4 a second time, independently, at preset
+medium CRF 18 (proof encode), and compared with after.mp4:
+
+  ffmpeg -i after.mp4 -i proof.mp4 -lavfi "[0:v][1:v]psnr" -f null -
+    average 45.49 dB, y 44.17, u 50.73, v 51.18, min 43.56, max 48.46
+  ffmpeg -i after.mp4 -i proof.mp4 -lavfi "[0:v][1:v]ssim" -f null -
+    All 0.991476, Y 0.990799, U 0.992490, V 0.993169
+
+Signal range, measured with ffmpeg signalstats over every frame:
+  before.mp4 YMIN 0, YMAX 246
+  after.mp4  YMIN 5, YMAX 239
+So the grade lifts the blacks (floor 0 to 5) and tames the highlights
+(ceiling 246 to 239) instead of crushing or clipping them.
+blackdetect (d=0.1, pix_th=0.10) reports no black segment in after.mp4.
+
+Files and checksums (md5)
+-------------------------
+  before.mp4  87fd4ac00f510dd9c9ff89335a07d7f7  3.4 MB
+  after.mp4   5ffe4e78e7730509dadfb0f1d6d0ddfb  3.5 MB
+  look.cube   5f81f3a7768b61d522cfe3f2d7aaca8a  948 KB
