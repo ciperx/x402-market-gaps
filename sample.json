@@ -1,0 +1,252 @@
+[
+ {
+  "id": "9ac496f4-bc2c-4869-af64-f20c034dd643",
+  "name": "Search GitHub repositories and accounts",
+  "url": "https://staging.toolkit.dev/api/tool/exa/github-search",
+  "advertised_usd": 0.05,
+  "status": 402,
+  "live_usd": 0.05,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "c2323cdb-8d35-44e1-a093-209beec8afa9",
+  "name": "faucet.mutinynet.com: Mutinynet Faucet L402 Auth",
+  "url": "https://faucet.mutinynet.com/api/l402",
+  "advertised_usd": 0.042338999999999995,
+  "status": 200,
+  "live_usd": null,
+  "verdict": "NO_PAYWALL",
+  "note": ""
+ },
+ {
+  "id": "a63c1e77-cab0-4740-8d82-5a6fe451794f",
+  "name": "L402 Apps: Get APIs Directory",
+  "url": "https://www.l402apps.com/api/apis",
+  "advertised_usd": 0.0084678,
+  "status": 404,
+  "live_usd": null,
+  "verdict": "HTTP_404",
+  "note": ""
+ },
+ {
+  "id": "8f41aab1-3ccd-4dba-b7e8-bfbf16b813ce",
+  "name": "3D Printable Hirth Dial STL \u2014 CAPI2",
+  "url": "https://capi2-foundry.vandurmedries.workers.dev/v1/products/parametric-hirth-dial/run",
+  "advertised_usd": 3.9,
+  "status": 402,
+  "live_usd": null,
+  "verdict": "402_NO_AMOUNT",
+  "note": ""
+ },
+ {
+  "id": "e45e977b-20e9-44cf-8d6c-0fbe90e98f03",
+  "name": "3D Printable Vessel STL \u2014 CAPI2",
+  "url": "https://capi2-foundry.vandurmedries.workers.dev/v1/products/parametric-sculptural-vessel/run",
+  "advertised_usd": 4.9,
+  "status": 402,
+  "live_usd": null,
+  "verdict": "402_NO_AMOUNT",
+  "note": ""
+ },
+ {
+  "id": "81be2506-2344-426c-bd47-e2dafd7801e6",
+  "name": "402xAgent",
+  "url": "https://api.402xagent.com/v1/lookup/paid",
+  "advertised_usd": 0.02,
+  "status": 402,
+  "live_usd": 0.02,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "53b101e4-0e18-4f4d-bda5-c8660ea29800",
+  "name": "47620 Solana Address Risk Check",
+  "url": "https://www.47620.xyz/x/solana/risk/8iZbjedTiMYVYGE9PZBHPm7k2KeXRqWAuCpSAxHm7j68",
+  "advertised_usd": 0.02,
+  "status": 402,
+  "live_usd": 0.02,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "493b9ce7-d9c4-4790-93fd-8ecade09ad0a",
+  "name": "47620 Solana Address Risk Check",
+  "url": "https://www.47620.xyz/x/risk/8iZbjedTiMYVYGE9PZBHPm7k2KeXRqWAuCpSAxHm7j68",
+  "advertised_usd": 0.02,
+  "status": 402,
+  "live_usd": 0.02,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "9c01e9ac-e9ad-40d2-8989-26a112bc2da8",
+  "name": "47620 Solana Agent Readiness",
+  "url": "https://www.47620.xyz/x/agent-readiness/8iZbjedTiMYVYGE9PZBHPm7k2KeXRqWAuCpSAxHm7j68",
+  "advertised_usd": 0.02,
+  "status": 402,
+  "live_usd": 0.02,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "0e852f65-4bbd-4947-aa6a-b6221416adca",
+  "name": "47620 Solana Market Overview",
+  "url": "https://www.47620.xyz/x/market-overview",
+  "advertised_usd": 0.01,
+  "status": 402,
+  "live_usd": 0.02,
+  "verdict": "LIVE_2x_HIGHER",
+  "note": ""
+ },
+ {
+  "id": "a79e1ac3-05b5-4156-a5c1-af3bb28f9148",
+  "name": "47620 Solana Network Health",
+  "url": "https://www.47620.xyz/x/health",
+  "advertised_usd": 0.005,
+  "status": 402,
+  "live_usd": 0.005,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "cec63b8b-21a5-4847-a2b3-bd0c4cb7c81c",
+  "name": "47620 Solana Should-Pay",
+  "url": "https://www.47620.xyz/x/should-pay/8iZbjedTiMYVYGE9PZBHPm7k2KeXRqWAuCpSAxHm7j68",
+  "advertised_usd": 0.02,
+  "status": 402,
+  "live_usd": 0.02,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "5077b208-3455-401a-a3f6-65679c191b6a",
+  "name": "47620 Solana Token Dossier",
+  "url": "https://www.47620.xyz/x/token-dossier/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "advertised_usd": 0.02,
+  "status": 402,
+  "live_usd": 0.02,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "a2cb872b-ff17-47e2-a697-c6e89bddb7a6",
+  "name": "47620 Solana Token Due Diligence Dossier",
+  "url": "https://www.47620.xyz/x/solana/token-dossier/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "advertised_usd": 0.02,
+  "status": 402,
+  "live_usd": 0.02,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "ac918e1a-6651-4a22-a3b9-1bb639e79ff8",
+  "name": "47620 Solana Token Report",
+  "url": "https://www.47620.xyz/x/token-report/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "advertised_usd": 0.02,
+  "status": 402,
+  "live_usd": 0.02,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "39c5581e-209f-4a57-8b01-ebeacf87c712",
+  "name": "47620 Solana Token Safety",
+  "url": "https://www.47620.xyz/x/token-safety/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "advertised_usd": 0.02,
+  "status": 402,
+  "live_usd": 0.02,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "3e1383ac-9259-4118-a215-b29f6df481e7",
+  "name": "47620 Solana Token Safety Check",
+  "url": "https://www.47620.xyz/x/solana/token-safety/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "advertised_usd": 0.02,
+  "status": 402,
+  "live_usd": 0.02,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "9890dac5-c5ec-46a0-b255-c1107364d72c",
+  "name": "47620 Solana Wallet Profile",
+  "url": "https://www.47620.xyz/x/wallet-profile/8iZbjedTiMYVYGE9PZBHPm7k2KeXRqWAuCpSAxHm7j68",
+  "advertised_usd": 0.02,
+  "status": 402,
+  "live_usd": 0.02,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "aa62c35b-dca8-4efb-b404-f8dfefe9b2e1",
+  "name": "47620 Solana Whale Radar",
+  "url": "https://www.47620.xyz/x/solana/whale-radar/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "advertised_usd": 0.02,
+  "status": 402,
+  "live_usd": 0.02,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "330745e2-49df-4887-864c-564420c28605",
+  "name": "47620 Solana Whale Radar",
+  "url": "https://www.47620.xyz/x/whale-radar/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "advertised_usd": 0.02,
+  "status": 402,
+  "live_usd": 0.02,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "f4b98ac6-c4f5-4ccf-ad61-fdfd66a48a5c",
+  "name": "54ch10 $1 stack",
+  "url": "https://54ch10.uk/v1/stack?pack=1",
+  "advertised_usd": 1,
+  "status": 402,
+  "live_usd": 1.0,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "a5c4ac93-721e-43be-9f08-95f0cd45f74e",
+  "name": "AI Discovery Site Audit \u2014 AEO/GEO Fix Pack ($5)",
+  "url": "https://agent402.dev/site-release-audit",
+  "advertised_usd": 5,
+  "status": 402,
+  "live_usd": null,
+  "verdict": "402_NO_AMOUNT",
+  "note": ""
+ },
+ {
+  "id": "27b4ec5e-6617-4325-afa5-c3fb266d01d2",
+  "name": "AI Search Volume: modeled question-demand signals",
+  "url": "https://agent.connskill.com/v1/ai-search-volume",
+  "advertised_usd": 0.05,
+  "status": 402,
+  "live_usd": 0.05,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "3a4c9ecb-e8ad-4ae4-8e80-8f68a3acf228",
+  "name": "AI image generation, text to image (FLUX.1 schnell): photo, illustration, logo, 3D; style-faithful, safety-screened",
+  "url": "https://ai-policy-kit.moneymaker-ai.workers.dev/api/ai/image",
+  "advertised_usd": 0.01,
+  "status": 402,
+  "live_usd": 0.01,
+  "verdict": "MATCH",
+  "note": ""
+ },
+ {
+  "id": "269821f8-5ca1-45b3-80d4-1e0d85e91112",
+  "name": "API Acre \u2014 Calldata decoder",
+  "url": "https://apiacre.com/v1/crypto/calldata-decode",
+  "advertised_usd": 0.001,
+  "status": 402,
+  "live_usd": null,
+  "verdict": "402_NO_AMOUNT",
+  "note": ""
+ }
+]
